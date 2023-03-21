@@ -47,7 +47,7 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 // print aangepaste array
-console.log(numbers)
+console.log(numbers);
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
