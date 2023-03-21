@@ -69,7 +69,7 @@ for (let i = 0; i < 10; i++) {
     }
 }
 
-//Gestart bij 1- want als ik de verwachte uitkomsten zie, wordt 0 niet geprint.
+//Gestart bij 1: want als ik de verwachte uitkomsten zie, wordt 0 niet geprint.
 for (let i = 1; i < 101 ; i++) {
     if (i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz");

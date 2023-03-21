@@ -64,6 +64,7 @@ for (let i = 0; i < scores.length; i++) {
 // ==========================================
 
 //print originele array:
+console.log("Originele array:");
 console.log(scores);
 
 // for loop om aanpassingen grade te maken:
@@ -82,6 +83,7 @@ for (let i = 0; i < scores.length; i++) {
 }
 
 //print aangepaste array:
+console.log("Aangepaste array:");
 console.log(scores);
 
 
@@ -97,6 +99,7 @@ const NOVIEmployees = [
 ];
 
 //print originele array employees
+console.log("Originele array:");
 console.log(NOVIEmployees);
 
 // voeg email toe aan employee objects
@@ -107,6 +110,7 @@ for (let i = 0; i < NOVIEmployees.length; i++) {
 }
 
 //print nieuwe array employees met email
+console.log("Aangepaste array:");
 console.log(NOVIEmployees);
 
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
@@ -124,6 +128,8 @@ console.log(NOVIEmployees);
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
+//print originele array (met hoofdletters):
+console.log("Originele array:");
 console.log(NOVIEmployees);
 
 // voeg email toe aan employee objects
@@ -134,6 +140,7 @@ for (let i = 0; i < NOVIEmployees.length; i++) {
 }
 
 //print nieuwe array employees met email
+console.log("Aangepaste array:");
 console.log(NOVIEmployees);
 
 
@@ -165,6 +172,7 @@ const students = [
 ];
 
 //print originele array:
+console.log("Originele array:");
 console.log(students);
 
 // for loop om aanpassing te maken in buurt:
@@ -192,12 +200,13 @@ for (let i = 0; i < students.length; i++) {
             students[i].neighborhood = "Schildersbuurt";
             break;
         default:
-            console.log("Er ging iets mis, neem contact op met je administrator");
+            console.log("Er ging iets mis, waarschijnlijk bestaat deze postcode niet in het systeem.");
 
     }
 
 }
 //print aangepaste lijst (verwachte uitkomsten lijst klopt niet)
+console.log("Aangepaste array:");
 console.log(students);
 
 // Verwachte uitkomsten:

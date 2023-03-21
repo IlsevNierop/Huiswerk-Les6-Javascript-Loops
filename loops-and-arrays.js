@@ -6,6 +6,7 @@
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
 //print eerst de originele array:
+console.log("Originele array:");
 console.log(names);
 
 // vervang de namen voor koosnaampjes met for loop
@@ -14,6 +15,7 @@ for (let i = 0; i < names.length; i++) {
     names[i] = names[i]+"je";
 }
 //print array met de aangepaste namen
+console.log("Aangepaste array:");
 console.log(names);
 
 
@@ -35,6 +37,7 @@ console.log(names);
 
 const numbers = [2, 4, 5, 29, 38];
 //print array met originele waardes
+console.log("Originele array:");
 console.log(numbers);
 
 //for loop om aanpassing te maken:
@@ -47,6 +50,7 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 // print aangepaste array
+console.log("Aangepaste array:");
 console.log(numbers);
 
 // Verwachtte uitkomsten:
@@ -69,6 +73,7 @@ console.log(numbers);
 
 const squares = [30, 2, 8, 24, 11];
 //print originele waardes:
+console.log("Originele array:");
 console.log(squares);
 
 // array aanpassen:
@@ -78,6 +83,7 @@ for (let i = 0; i < squares.length; i++) {
 }
 
 // print nieuwe array:
+console.log("Aangepaste array:");
 console.log(squares);
 
 
