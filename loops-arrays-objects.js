@@ -9,15 +9,17 @@ const scores = [
     {name: 'Rianne', score: 66, grade: null}
 ];
 
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score);
+
+}
+
 // Verwachtte uitkomsten:
 // 83
 // 77
 // 92
 // 66ç
 // ==========================================
-
-
-
 
 
 // ==========================================
@@ -32,8 +34,20 @@ const scores = [
 // D
 // ==========================================
 
-
-
+// Ik miste de E in het rijtje - heb bovenstaande uitleg maar aangehouden, waar geen E bestaat en van D direct naar F gaat.
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60) {
+        console.log("F");
+    } else if (scores[i].score < 70) {
+        console.log("D");
+    } else if (scores[i].score < 80) {
+        console.log("C");
+    } else if (scores[i].score < 90) {
+        console.log("B");
+    } else {
+        console.log("A");
+    }
+}
 
 
 // ==========================================
@@ -49,8 +63,28 @@ const scores = [
 //  ];
 // ==========================================
 
+//print originele array:
+console.log("Originele array:");
+console.log(scores);
 
+// for loop om aanpassingen grade te maken:
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60) {
+        scores[i].grade = "F";
+    } else if (scores[i].score < 70) {
+        scores[i].grade = "D";
+    } else if (scores[i].score < 80) {
+        scores[i].grade = "C";
+    } else if (scores[i].score < 90) {
+        scores[i].grade = "B";
+    } else {
+        scores[i].grade = "A";
+    }
+}
 
+//print aangepaste array:
+console.log("Aangepaste array:");
+console.log(scores);
 
 
 // ==========================================
@@ -64,6 +98,21 @@ const NOVIEmployees = [
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
 
+//print originele array employees
+console.log("Originele array:");
+console.log(NOVIEmployees);
+
+// voeg email toe aan employee objects
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    let email = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName + "@novi.nl";
+    NOVIEmployees[i].email = email;
+
+}
+
+//print nieuwe array employees met email
+console.log("Aangepaste array:");
+console.log(NOVIEmployees);
+
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
 // Na jouw script zie je de aangepaste objecten:
@@ -76,15 +125,23 @@ const NOVIEmployees = [
 // ==========================================
 
 
-
-
-
-
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
+//print originele array (met hoofdletters):
+console.log("Originele array:");
+console.log(NOVIEmployees);
 
+// voeg email toe aan employee objects
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    let email = NOVIEmployees[i].firstName.toLowerCase() + "." + NOVIEmployees[i].lastName.toLowerCase() + "@novi.nl";
+    NOVIEmployees[i].email = email;
 
+}
+
+//print nieuwe array employees met email
+console.log("Aangepaste array:");
+console.log(NOVIEmployees);
 
 
 // ==========================================
@@ -113,6 +170,44 @@ const students = [
     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
+
+//print originele array:
+console.log("Originele array:");
+console.log(students);
+
+// for loop om aanpassing te maken in buurt:
+for (let i = 0; i < students.length; i++) {
+    switch (students[i].zipCode) {
+        case "3513":
+            students[i].neighborhood = "Pijlsweerd";
+            break;
+        case "3514":
+            students[i].neighborhood = "Vogelenbuurt";
+            break;
+        case "3512":
+            students[i].neighborhood = "Binnenstad";
+            break;
+        case "3531":
+            students[i].neighborhood = "Lombok";
+            break;
+        case "3572":
+            students[i].neighborhood = "Wittevrouwen";
+            break;
+        case "3581":
+            students[i].neighborhood = "Oudwijk";
+            break;
+        case "3583":
+            students[i].neighborhood = "Schildersbuurt";
+            break;
+        default:
+            console.log("Er ging iets mis, waarschijnlijk bestaat deze postcode niet in het systeem.");
+
+    }
+
+}
+//print aangepaste lijst (verwachte uitkomsten lijst klopt niet)
+console.log("Aangepaste array:");
+console.log(students);
 
 // Verwachte uitkomsten:
 // [
