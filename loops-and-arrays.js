@@ -5,6 +5,17 @@
 // ==========================================
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
+//print eerst de originele array:
+console.log(names);
+
+// vervang de namen voor koosnaampjes met for loop
+for (let i = 0; i < names.length; i++) {
+
+    names[i] = names[i]+"je";
+}
+//print array met de aangepaste namen
+console.log(names);
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -23,6 +34,20 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+//print array met originele waardes
+console.log(numbers);
+
+//for loop om aanpassing te maken:
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0){
+        numbers[i] = numbers[i]*2;
+    }
+    else {
+        numbers[i] = numbers[i]*3;
+    }
+}
+// print aangepaste array
+console.log(numbers)
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -43,6 +68,19 @@ const numbers = [2, 4, 5, 29, 38];
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+//print originele waardes:
+console.log(squares);
+
+// array aanpassen:
+for (let i = 0; i < squares.length; i++) {
+    let volumeSquare = squares[i]*squares[i]*squares[i];
+    squares[i] = "Het volume van " + squares[i] + " is " + volumeSquare;
+}
+
+// print nieuwe array:
+console.log(squares);
+
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
